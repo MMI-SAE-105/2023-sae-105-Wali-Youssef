@@ -21,12 +21,12 @@
             background-color: gray;
             display: grid;
             place-content: center;
+            z-index: 2;
             
            
         }
 
          .header_menuBtn {
-            position: relative;
         
             background-color: none;
             right: 30px;
@@ -46,7 +46,7 @@
 </style>
 
 
-</head>
+
 <body>
 <header>
 
@@ -58,6 +58,7 @@
 </button>
 
 <h1>L'expo magique </h1>
+
 <nav 
 id="mainNav"
  x-show="menuIsOpen"
@@ -71,16 +72,22 @@ id="mainNav"
     <img class="croix" src="/public/icon/x (3).svg" alt="#">
 </button>
 
-    <ul>
-        <li><a href="#"> item1</a></li>
-        <li><a href="#"> item2</a></li>
-        <li><a href="#"> item3</a></li>
+    <ul class="ul">
+        <li class="list-menu"><a href="#"> item1</a></li>
+        <li class="list-menu"><a href="#"> item2</a></li>
+        <li class="list-menu"><a href="#"> item3</a></li>
         
     </ul>
+    
 </nav>
 
 
+
 </header>
+</head>
+<div class="bar"></div>
+
+
 
 <p class="Expo">Exposition a Paris </p>
 <p class="Réalismemagique"> Réalisme magique </p>
@@ -88,13 +95,13 @@ id="mainNav"
 
 <br>
 
-<div class="carre">
+
 <h2 class="Titre"> Réalisme magique </h2>
+<div class="carre">
 <p class="texte"> Le réalisme magique est une appellation utilisée par la critique littéraire et la critique d’art depuis 1925 pour rendre compte de productions où des éléments perçus et décrétés comme « magiques », « surnaturels » et « irrationnels » surgissent dans un environnement défini comme « réaliste », à savoir un cadre historique, géographique, ethnique, social ou culturel avéré. 
 </p>
 <img class="imgcarre1" src="./public/img/page d'acceuil/cadre.webp" alt="cadre">
 </div>
-
 <div class="carre"> 
     
 

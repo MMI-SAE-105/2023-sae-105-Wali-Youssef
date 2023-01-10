@@ -1,5 +1,9 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-    margin: 0 20px;
+   
 }
 
 img {
@@ -19,8 +23,13 @@ img {
   img{
     max-width:100%;
     height:auto;
+    
   }
 
+  .imgtexte{
+
+    margin: 40px;
+  }
   .carrousel_parent-ecrans{
     display:flex;
     max-width:100%;
@@ -44,6 +53,7 @@ img {
 
   .carrousel {
     position: relative;
+    z-index: 1;
   }
 
   .carrousel_btn {
@@ -101,5 +111,40 @@ img {
 
   h1{
 
-    height: 120px;
+    
   }
+
+
+
+
+  .carre {
+   background-color:gray;
+   color: #000;
+   width: 80%;
+   margin: 20px;
+   padding: 10px ;
+   align-items: center;
+   align-content: center;
+   display: flex;
+   border-color: #000;
+   border: 2px solid;
+}
+p{
+    font-size: x-small;
+
+}
+
+.soustitre{  
+  background-color:gray;
+   color: #000;
+   width: 50%;
+   margin: 20px;
+   padding: 10px ;
+   align-items: center;
+   align-content: center;
+   display: flex;
+   border-color: #000;
+   border: 2px solid;
+
+}
+

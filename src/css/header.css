@@ -21,6 +21,24 @@ position: absolute;
 
 }
 
+
+.plusdinfo{
+
+    position: relative;
+    background-color: gray;
+    color: #000;
+    
+    margin: 20px;
+    padding: 10px;
+    align-items: center;
+    /* align-content: center; */
+    display: flex;
+    border-color: #000;
+    border: 2px solid;
+
+}
+
+
 .croix {
 
     background: none;
@@ -32,4 +50,20 @@ position: absolute;
 }
 
 
+.bar
+{ 
 
+    height:4px;
+    width:100%;
+    background-color:black;
+    padding:    0;
+    
+    
+}
+
+.list-menu{
+list-style: none;
+padding-bottom: 30px;
+align-items: center;
+
+}

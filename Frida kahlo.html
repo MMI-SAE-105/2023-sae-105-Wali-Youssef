@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{menuIsOpen: false}" 
+:class="{noscroll:menuIsOpen,}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'expo magique</title>
+    <link rel="stylesheet" href="./src/style.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <style>
+
+
+.menu {
+           
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: gray;
+            display: grid;
+            place-content: center;
+            z-index: 2;
+            
+           
+        }
+
+         .header_menuBtn {
+        
+            background-color: none;
+            right: 30px;
+            
+            width : 150%;
+            height : 150%;
+          
+
+        }
+
+        .noscroll,
+.noscroll body {
+  overflow: hidden;
+  
+}
+
+</style>
+
+
+
+<body>
+<header>
+
+
+
+<button
+  @click="menuIsOpen = ! menuIsOpen" class="boutonme">
+ <img aria-controls="mainNav" class="header_menuBtn" src="/public/Icon/menu (1).svg" alt="btn menu">  
+</button>
+
+<h1>L'expo magique </h1>
+
+<nav 
+id="mainNav"
+ x-show="menuIsOpen"
+  x-transition.duration.800ms
+  class="menu"
+  >
+
+
+
+  <button @click="menuIsOpen = ! menuIsOpen">
+    <img class="croix" src="/public/icon/x (3).svg" alt="#">
+</button>
+
+    <ul class="ul">
+        <li class="list-menu"><a href="#"> item1</a></li>
+        <li class="list-menu"><a href="#"> item2</a></li>
+        <li class="list-menu"><a href="#"> item3</a></li>
+        
+    </ul>
+    
+</nav>
+
+
+
+</header>
+</head>
+<div class="bar"></div>
+
+
+<h2 class="Titre"> Frida Kahlo </h2>
+<div class="carre">
+<img class="imgcarre1" src="./public/img/Frida kahlo/Frida.webp" alt="Portrait">
+</div>
+
+<div class="carre"> 
+    
+    <p class="texte">Magdalena Frida Carmen Kahlo Calderón ou Frida Kahlo, née le 6 juillet 1907 dans une démarcation territoriale (es) de l'actuelle entité fédérative de Ciudad de México, la délégation de Coyoacán, et morte le 13 juillet 1954 au même endroit, est une artiste peintre mexicaine.</p>
+
+</div>
+
+
+<div class="carre"> 
+    
+    <p class="texte">Tout au long de sa vie, elle garde une santé fragile, souffrant de poliomyélite depuis l'âge de six ans puis victime d'un grave accident de bus. Elle devra subir de nombreuses interventions chirurgicales.
+
+        Après son accident, elle se forme elle-même à la peinture.</p>
+
+</div>
+
+<button class="plusdinfo " >Plus d'information
+</button>
+<img class="imgtexte" src="/public/img/Frida kahlo/Tableau1.webp" alt="">
+
+<p class="soustitre"> mes parents , mes grands parents et moi</p>
+
+
+<button class="plusdinfo " >Plus d'information
+</button>
+<img class="imgtexte" src="/public/img/Frida kahlo/tableau2.webp" alt="">
+
+<p class="soustitre"> mes parents , mes grands parents et moi</p>
+
+
+
+
+
+</body>
+</html>

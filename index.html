@@ -5,9 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>L'expo magique</title>
-    
-    
+    <title>L'expo magique</title>
+    <link rel="stylesheet" href="./src/style.css">
     <script defer src="https://unpkg.com/alpinejs"></script>
     <style>
 
@@ -29,6 +28,7 @@
          .header_menuBtn {
             position: relative;
             z-index: 10;
+            
 
         }
 
@@ -42,20 +42,17 @@
 
 
 </head>
-
 <body>
- 
 <header>
 
 
 
 <button
- 
   @click="menuIsOpen = ! menuIsOpen">
  <img aria-controls="mainNav" class="header_menuBtn" src="/public/Icon/menu (1).svg" alt="btn menu">  
 </button>
 
-<h1>Test de menu</h1>
+<h1>L'expo magique </h1>
 <nav 
 id="mainNav"
  x-show="menuIsOpen"

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{menuIsOpen: false}" 
+:class="{noscroll:menuIsOpen,}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'expo magique</title>
+    <link rel="stylesheet" href="./src/style.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <style>
+
+
+.menu {
+           
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: gray;
+            display: grid;
+            place-content: center;
+            z-index: 2;
+            
+           
+        }
+
+         .header_menuBtn {
+        
+            background-color: none;
+            right: 30px;
+            
+            width : 150%;
+            height : 150%;
+          
+
+        }
+
+        .noscroll,
+.noscroll body {
+  overflow: hidden;
+  
+}
+
+</style>
+
+
+
+<body>
+<header>
+
+
+
+<button
+  @click="menuIsOpen = ! menuIsOpen" class="boutonme">
+ <img aria-controls="mainNav" class="header_menuBtn" src="/public/Icon/menu (1).svg" alt="btn menu">  
+</button>
+
+<h1>L'expo magique </h1>
+
+<nav 
+id="mainNav"
+ x-show="menuIsOpen"
+  x-transition.duration.800ms
+  class="menu"
+  >
+
+
+
+  <button @click="menuIsOpen = ! menuIsOpen">
+    <img class="croix" src="/public/icon/x (3).svg" alt="#">
+</button>
+
+    <ul class="ul">
+        <li class="list-menu"><a href="#"> item1</a></li>
+        <li class="list-menu"><a href="#"> item2</a></li>
+        <li class="list-menu"><a href="#"> item3</a></li>
+        
+    </ul>
+    
+</nav>
+
+
+
+</header>
+</head>
+<div class="bar"></div>
+
+<img class="imgtexte" src="/public/img/Frida kahlo/famillekahlo.webp "alt="#">
+
+<p class="soustitre"> mes parents , mes grands parents et moi</p>
+
+
+
+<div class="carre"> 
+    
+    <p class="texte">Mes grands-parents, mes parents et moi  est une peinture de Frida Kahlo réalisée à l'huile et tempera sur zinc en 1936 pour le docteur Allan Ross. De dimensions 30,7 × 34,5 cm, elle est aujourd'hui entreposée au Museum of Modern Art à New York. C'est le premier des portraits qu'elle a peints de sa famille et où figure son arbre généalogique.</p>
+
+</div>
+
+<div class="carre"> 
+    
+    <p class="texte">L'œuvre est réalisée afin de s'opposer aux lois de Nuremberg de 1935 interdisant le mariage interracial en Allemagne en montrant la double origine de Kahlo en utilisant un arbre généalogique, ce dernier étant utilisé par le régime nazi pour évaluer la pureté raciale .</p>
+
+</div>
+
+
+<div class="carre"> 
+    
+    <p class="texte">Le tableau représente l'arbre généalogique de Frida Kahlo. En haut à droite figurent ses grands-parents paternels et en haut à gauche ses grands-parents maternels. Ses parents sont au centre du tableau en tenue de mariage4. Kahlo se représente à la fois en bas et sous forme de fœtus accroché au ventre de la mère. .</p>
+
+
+</div>
+
+
+
+<br>
+<br>          
+<footer> 
+
+<div class="barre"></div>
+<h4 class="p__footer">&copy; Wali Youssef - C2</h4>
+
+<Ul<ul style="list-style-type:none;"></ul>
+<li><a class="p__footer" href="#">Exposition</a></li>
+<li><a class="p__footer " href="#">Contact</a></li>
+<li><a class="p__footer "href="#"> <img src="./public/Icon/instagram.svg" alt="#"> </a></li>
+<li><a class="p__footer "  href="contact.html">Formulaire de Contact</a></li>
+<li><a class="p__mail "href="mailto:youyouwalicm@gmail.com">Contact Mail</a></li>
+</Ul>
+<p class="p__footer">
+Projet réalisé dans le cadre d'un exercice pédagogique au département
+<a class="p__footer " href="http://mmimontbeliard.com">MMI de Montbéliard</a >
+</p>
+
+<IMG
+class="icon__mmi"
+src= "/public/icon/LOGO_MMI.svg"
+alt="logo du dpt MMI de Montbéliard">
+
+<p>Université Nord Franche-Comté</p>
+</footer>
+
+
+
+
+
+</body>
+</html>

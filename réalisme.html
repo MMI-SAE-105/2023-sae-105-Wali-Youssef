@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en" x-data="{menuIsOpen: false}" 
 :class="{noscroll:menuIsOpen,}">
@@ -60,3 +59,43 @@
 
 <h1>L'expo magique </h1>
 
+<nav 
+id="mainNav"
+ x-show="menuIsOpen"
+  x-transition.duration.800ms
+  class="menu"
+  >
+
+
+
+  <button @click="menuIsOpen = ! menuIsOpen">
+    <img class="croix" src="/public/icon/x (3).svg" alt="#">
+</button>
+
+    <ul class="ul">
+        <li class="list-menu"><a href="#"> item1</a></li>
+        <li class="list-menu"><a href="#"> item2</a></li>
+        <li class="list-menu"><a href="#"> item3</a></li>
+        
+    </ul>
+    
+</nav>
+
+
+
+</header>
+</head>
+<div class="bar"></div>
+
+
+<p class="soustitre"> Réalisme magique  </p>
+
+
+<div class="carre"> 
+    
+    <p class="texte">Le réalisme magique est une appellation utilisée par la critique littéraire et la critique d’art depuis 1925 pour rendre compte de productions où des éléments perçus et décrétés comme « magiques », « surnaturels » et « irrationnels » surgissent dans un environnement défini comme « réaliste », à savoir un cadre historique, géographique, ethnique, social ou culturel avéré. Ainsi la réalité reconnaissable devient-elle le lieu naturel de manifestations paranormales et oniriques.</p>
+
+</div>
+
+
+<img class="imgtexte" src="/public/img/réalisme/tableau.webp"alt="#">

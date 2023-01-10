@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{menuIsOpen: false}" 
+:class="{noscroll:menuIsOpen,}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'expo magique</title>
+    <link rel="stylesheet" href="./src/style.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <style>
+
+
+.menu {
+           
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: gray;
+            display: grid;
+            place-content: center;
+            z-index: 2;
+            
+           
+        }
+
+         .header_menuBtn {
+        
+            background-color: none;
+            right: 30px;
+            
+            width : 150%;
+            height : 150%;
+          
+
+        }
+
+        .noscroll,
+.noscroll body {
+  overflow: hidden;
+  
+}
+
+</style>
+
+
+
+<body>
+<header>
+
+
+
+<button
+  @click="menuIsOpen = ! menuIsOpen" class="boutonme">
+ <img aria-controls="mainNav" class="header_menuBtn" src="/public/Icon/menu (1).svg" alt="btn menu">  
+</button>
+
+<h1>L'expo magique </h1>
+
+<nav 
+id="mainNav"
+ x-show="menuIsOpen"
+  x-transition.duration.800ms
+  class="menu"
+  >
+
+
+
+  <button @click="menuIsOpen = ! menuIsOpen">
+    <img class="croix" src="/public/icon/x (3).svg" alt="#">
+</button>
+
+    <ul class="ul">
+        <li class="list-menu"><a href="#"> item1</a></li>
+        <li class="list-menu"><a href="#"> item2</a></li>
+        <li class="list-menu"><a href="#"> item3</a></li>
+        
+    </ul>
+    
+</nav>
+
+
+
+</header>
+</head>
+<div class="bar"></div>
+
+
+<p class="soustitre"> Information </p>
+
+<p class="expo">Dates de l’exposition : du 13 avril au 23 juin 2021
+    Lieu de l’exposition : Fondation Cartier, 261 Bd Raspail, 75014 Paris
+    Horaires d’ouverture : Tous les jours de 11h à 20h, sauf le lundi. Nocturne le mardi, jusqu'à 22h. La fermeture des salles débute à 19h45 (21h45 les mardis).</p>
+
+
+    <p class="soustitre"> Tarif </p>
+    <p class="expo">Plein tarif ⇒ 11€
+        Tarif réduit ⇒ 7,50€
+        Réduction 13 - 25 ans ⇒ 5€
+        Fondation Cartier Pass ⇒ 18€ - 50€
+        Moins de 13 ans, Laissez-passer annuel, carte Icom, carte de presse, carte d'invalidité, Fondation Cartier Pass, Etudiants ⇒ Gratuit</p>
+    
+
+
+        <p class="soustitre"> Billeterie </p>
+
+    
+
+        <br>
+        <br>          
+        <footer> 
+        
+        <div class="barre"></div>
+        <h4 class="p__footer">&copy; Wali Youssef - C2</h4>
+        
+        <Ul<ul style="list-style-type:none;"></ul>
+        <li><a class="p__footer" href="#">Exposition</a></li>
+        <li><a class="p__footer " href="#">Contact</a></li>
+        <li><a class="p__footer "href="#"> <img src="./public/Icon/instagram.svg" alt="#"> </a></li>
+        <li><a class="p__footer "  href="contact.html">Formulaire de Contact</a></li>
+        <li><a class="p__mail "href="mailto:youyouwalicm@gmail.com">Contact Mail</a></li>
+        </Ul>
+        <p class="p__footer">
+        Projet réalisé dans le cadre d'un exercice pédagogique au département
+        <a class="p__footer " href="http://mmimontbeliard.com">MMI de Montbéliard</a >
+        </p>
+        
+        <IMG
+        class="icon__mmi"
+        src= "/public/icon/LOGO_MMI.svg"
+        alt="logo du dpt MMI de Montbéliard">
+        
+        <p>Université Nord Franche-Comté</p>
+        </footer>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </body>
+        </html>
+        

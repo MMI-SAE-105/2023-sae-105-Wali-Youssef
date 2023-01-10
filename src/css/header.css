@@ -18,3 +18,11 @@ background-color: white;
 border: none;
 
 }
+
+.croix {
+
+    position: absolute;
+    whith: 10%;
+    top: 10px;
+    left: 12px;
+}

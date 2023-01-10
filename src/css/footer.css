@@ -1,0 +1,14 @@
+.footer {
+    background-color: var(--noir);
+    height: 400px;
+    margin : 0;
+    padding: 24px;
+}
+
+.p__footer {
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--whitetext);
+    text-decoration : none;
+}

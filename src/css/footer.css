@@ -29,3 +29,28 @@ a.p__footer {
     color: var(--whitetext);
     text-decoration: underline;
 }
+
+
+.icon__mmi {
+   
+    height: 96px;
+    margin: 0 auto;
+    
+}
+footer{text-align: center;
+    line-height: 1.6;
+    background-color: gray;
+    
+    font-family:  'Montserrat', sans-serif;;
+margin: -15px;
+
+
+}
+
+.barre{
+   
+    height:15px;
+    width:100%;
+    background-color:black;
+    padding:    0;
+}

@@ -3,9 +3,18 @@ header {
     height: 120px;
     align-items: center;
     justify-content: center;
-    background-color: #423F3F;
+    background-color: #ffffff;
      
 }
 
 body{margin: 0;
+}
+.header_menuBtn{
+    color: #423F3F;
+}
+
+button{
+background-color: white;
+border: none;
+
 }

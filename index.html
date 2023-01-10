@@ -28,7 +28,12 @@
          .header_menuBtn {
             position: relative;
             z-index: 10;
+            background-color: white;
+            right: 30px;
             
+            width : 150%;
+            height : 150%;
+          
 
         }
 
@@ -59,6 +64,13 @@ id="mainNav"
   x-transition.duration.800ms
   class="menu"
   >
+
+
+
+  <button @click="menuIsOpen = ! menuIsOpen">
+    <img class="croix" src="/public/icon/marque-de-croix-removebg-preview 1.webp" alt="#">
+</button>
+
     <ul>
         <li><a href="#"> item1</a></li>
         <li><a href="#"> item2</a></li>
@@ -67,6 +79,16 @@ id="mainNav"
     </ul>
 </nav>
 
+
 </header>
+
+<p class="Expo">Exposition a Paris </p>
+<p class="Réalismemagique"> Réalisme magique </p>
+<p class="Expo"> du 13 avril au 23 juin 2023</p>
+
+
+
+
+
 </body>
 </html>

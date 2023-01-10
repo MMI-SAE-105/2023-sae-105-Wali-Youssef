@@ -118,7 +118,7 @@ img {
 
 
   .carre {
-   background-color:gray;
+   background-color:#F2F2F2;
    color: #000;
    width: 80%;
    margin: 20px;
@@ -145,6 +145,22 @@ p{
    display: flex;
    border-color: #000;
    border: 2px solid;
+
+}
+.soustitretest{  
+  position: relative;
+  background-color:white;
+   color: #000;
+   width: 30%;
+   margin: 20px;
+   padding: 10px ;
+   align-items: center;
+   align-content: center;
+   display: flex;
+   border-color: #000;
+   border: 2px solid;
+   left: 70px;
+   top: 30px;
 
 }
 

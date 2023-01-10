@@ -11,6 +11,7 @@
     <script defer src="https://unpkg.com/alpinejs"></script>
     <style>
 
+
 .menu {
            
             position: fixed;
@@ -44,15 +45,16 @@
 
 <body>
  
-    <header>
+<header>
+
+
 
 <button
- aria-controls="mainNav"
-  @click="menuIsOpen = ! menuIsOpen"
- class="header_menuBtn"
-   >
-   menu
+ 
+  @click="menuIsOpen = ! menuIsOpen">
+ <img aria-controls="mainNav" class="header_menuBtn" src="/public/Icon/menu (1).svg" alt="btn menu">  
 </button>
+
 <h1>Test de menu</h1>
 <nav 
 id="mainNav"

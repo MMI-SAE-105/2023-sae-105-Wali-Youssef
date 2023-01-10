@@ -1,6 +1,5 @@
 header {
     display: flex;
-    height: 120px;
     align-items: center;
     justify-content: center;
     background-color: #ffffff;
@@ -29,6 +28,7 @@ position: absolute;
 }
 .boutonme {
     background: none;
+    margin: 7px;
 }
 
 

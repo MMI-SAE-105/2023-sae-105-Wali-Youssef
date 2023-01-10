@@ -98,3 +98,8 @@ img {
     text-underline-position: under;
     font-weight: 100;
   }
+
+  h1{
+
+    height: 120px;
+  }

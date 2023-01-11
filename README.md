@@ -4,6 +4,10 @@
 - URL du site :
 - URL FIGMA :
 
+Vue par moi (Pierre) :
+Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+N'a pas pu faire le dns perso mettre tous les points.
+
 # Structure de départ pour la SAE 105.
 
 La structure de votre projet doit respecter scrupuleusement le modèle fourni dans ce dépôt (Repository).

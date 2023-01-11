@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{menuIsOpen: false}" 
+:class="{noscroll:menuIsOpen,}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'expo magique</title>
+    <link rel="stylesheet" href="./src/style.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="preconnect " href="https://fonts.googleapis.com"> <link rel="preconnect " href="https://fonts.gstatic.com " crossorigin>
+    <style>
+
+
+.menu {
+           
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: gray;
+            display: grid;
+            place-content: center;
+            z-index: 2;
+            
+           
+        }
+
+         .header_menuBtn {
+        
+            background-color: none;
+            right: 30px;
+            
+            width : 150%;
+            height : 150%;
+          
+
+        }
+
+        .noscroll,
+.noscroll body {
+  overflow: hidden;
+  
+}
+
+</style>
+
+
+
+<body>
+<header>
+
+
+
+<button
+  @click="menuIsOpen = ! menuIsOpen" class="boutonme">
+ <img aria-controls="mainNav" class="header_menuBtn" src="/public/Icon/menu (1).svg" alt="btn menu">  
+</button>
+
+<h1 ><a href="./index.html">L'expo magique </a></h1>
+
+<nav 
+id="mainNav"
+ x-show="menuIsOpen"
+  x-transition.duration.800ms
+  class="menu"
+  >
+
+
+
+  <button @click="menuIsOpen = ! menuIsOpen">
+    <img class="croix" src="/public/icon/x (3).svg" alt="#">
+</button>
+
+<ul class="ul">
+    <li class="list-menu"><a href="./exposition.html"> Exposition</a></li>
+    <div class="bar1"></div>
+    <br><br>
+    <li class="list-menu"><a href="./réalisme.html">  Réalisme magique </a></li>
+    <div class="bar1"></div>
+    <br><br>
+    <li class="list-menu"><a href="./contact.html"> Contact</a></li>
+    <div class="bar1"></div>
+    <br><br>
+    <li class="list-menu"><a href="./anglais.html"> Anglais</a></li>
+    
+    </ul>
+    
+</nav>
+
+
+
+</header>
+</head>
+<div class="bar"></div>
+
+
+<h2 class="soustitrefrida">Antonio lopez garcia</h2>
+
+<img class="imgtexte" src="./public/img/page d'acceuil/barbu2.webp"alt="Portrait">
+
+
+<div class="carre"> 
+    
+    <p class="texte">Antonio López García (né à Tomelloso, Ciudad Real, le 6 janvier de 1936) est un artiste peintre et sculpteur espagnol contemporain, qui vit et travaille à Madrid. C’est un des principaux représentants de l’hyperréalisme en Europe. </p>
+
+</div>
+
+
+<div class="carre"> 
+    
+    <p class="texte">Antonio est le frère aîné d’une famille de quatre enfants (Josefina, Diógenes y Carmen). Ses parents étaient agriculteurs à la florissante ville de Tomelloso.
+
+        En 1983, il reçoit la Médaille d'or du mérite des beaux-arts par le Ministère de l'Éducation, de la Culture et des Sports1.
+    </p>
+
+</div>
+
+<button class="plusdinfo " > <a href="./melody.html"> Plus d'information</a>
+</button>
+<img class="imgtexte" src="/public/img/lopez/img1.webp" alt="">
+<p class="soustitrefrida2"> Melody </p>
+
+<button class="plusdinfo " > <a href="./public/img/lopez/img 2.webp"> Plus d'information</a>
+</button>
+<img class="imgtexte" src="/public/img/lopez/img 2.webp" alt="">
+<p class="soustitrefrida2">Abstrat composition  </p>
+
+
+
+<br>
+<br>          
+<footer> 
+
+<div class="barre"></div>
+<h4 class="p__footer">&copy; Wali Youssef - C2</h4>
+
+<Ul<ul style="list-style-type:none;"></ul>
+<li><a class="p__footer" href="#">Exposition</a></li>
+<li><a class="p__footer " href="#">Contact</a></li>
+<li><a class="p__footer "href="#"> <img src="./public/Icon/instagram.svg" alt="#"> </a></li>
+<li><a class="p__footer "  href="contact.html">Formulaire de Contact</a></li>
+<li><a class="p__mail "href="mailto:youyouwalicm@gmail.com">Contact Mail</a></li>
+</Ul>
+<p class="p__footer">
+Projet réalisé dans le cadre d'un exercice pédagogique au département
+<a class="p__footer " href="http://mmimontbeliard.com">MMI de Montbéliard</a >
+</p>
+
+<IMG
+class="icon__mmi"
+src= "/public/icon/LOGO_MMI.svg"
+alt="logo du dpt MMI de Montbéliard">
+
+<p>Université Nord Franche-Comté</p>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

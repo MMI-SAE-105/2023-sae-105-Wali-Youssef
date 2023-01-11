@@ -227,10 +227,6 @@ font-size: 24px;
 margin: 20px;
 }
 
-.imgtexte2{
-
-
-}
 
 .expo{
   font-family: 'Kalam', cursive;
@@ -241,4 +237,10 @@ margin: 20px;
 .ul{ 
 
 padding-left: 0;
+}
+
+.imgtexte2 {
+
+
+  margin-left: 127px;
 }

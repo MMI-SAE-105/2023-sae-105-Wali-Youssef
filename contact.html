@@ -9,6 +9,7 @@
     <title>L'expo magique</title>
     <link rel="stylesheet" href="./src/style.css">
     <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="preconnect " href="https://fonts.googleapis.com"> <link rel="preconnect " href="https://fonts.gstatic.com " crossorigin>
     <style>
 
 
@@ -58,5 +59,79 @@
  <img aria-controls="mainNav" class="header_menuBtn" src="/public/Icon/menu (1).svg" alt="btn menu">  
 </button>
 
-<h1>L'expo magique </h1>
+<h1 ><a href="./index.html">L'expo magique </a></h1>
 
+<nav 
+id="mainNav"
+ x-show="menuIsOpen"
+  x-transition.duration.800ms
+  class="menu"
+  >
+
+
+
+  <button @click="menuIsOpen = ! menuIsOpen">
+    <img class="croix" src="/public/icon/x (3).svg" alt="#">
+</button>
+
+<ul class="ul">
+    <li class="list-menu"><a href="./exposition.html"> Exposition</a></li>
+    <div class="bar1"></div>
+    <br><br>
+    <li class="list-menu"><a href="./réalisme.html">  Réalisme magique </a></li>
+    <div class="bar1"></div>
+    <br><br>
+    <li class="list-menu"><a href="./contact.html"> Contact</a></li>
+    <div class="bar1"></div>
+    <br><br>
+    <li class="list-menu"><a href="./anglais.html"> Anglais</a></li>
+    
+    </ul>
+    
+</nav>
+
+
+
+</header>
+</head>
+<div class="bar"></div>
+
+    
+       
+            <div class="row input-container">
+                    <div class="col-xs-12">
+                        <p class="replacetext"></p>
+                        <div class="styled-input wide">
+                            <input type="text" placeholder="Nom" required />
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col-md-6 col-sm-12">
+                        <p class="replacetext"></p>
+                        <div class="styled-input">
+                            <input type="text" placeholder="Email" required />
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col-md-6 col-sm-12">
+                        <p class="replacetext"></p>
+                        <div class="styled-input">
+                            <input type="text" placeholder="Numéro de téléphone" required />                 
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col-xs-12">
+                        <p class="replacetext"></p>
+                        <div class="styled-input wide1">
+                            <textarea placeholder="Votre message" required></textarea>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col-xs-12">
+                        <div class="btn-lrg submit-btn">Envoyer</div>
+                    </div>
+            </div>
+        </div>
+        
+        
+        <body>

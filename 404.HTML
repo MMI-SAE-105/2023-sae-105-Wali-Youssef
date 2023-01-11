@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js%22%3E"></script>
+<link rel="stylesheet" href="./src/style.css">
 <title>404 - Page Non trouvée</title>
-<h1>Page Non trouvée</h1>
+<h1 class="h1404">Page Non trouvée</h1>
 <form action="https://timely-axolotl-012ae0.netlify.app" method="GET" 
     x-data="{ q:'', }" 
     x-on:submit="q = q + 'site:timely-axolotl-012ae0.netlify.app'">
-    <label for="q">Que rechercher-vous :</label>
-    <input type="text" id="q" name="q" x-model="q">
-    <button type="submit">Rechercher</button>
+    <label for="q" class="p404">Cliquez pour accéder au</label>
+    <button type="submit" class="p1404">Menu</button>
 </form>

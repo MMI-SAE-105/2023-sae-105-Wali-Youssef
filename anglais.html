@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{menuIsOpen: false}" 
+:class="{noscroll:menuIsOpen,}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'expo magique</title>
+    <link rel="stylesheet" href="./src/style.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="preconnect " href="https://fonts.googleapis.com"> <link rel="preconnect " href="https://fonts.gstatic.com " crossorigin>
+    <style>
+
+
+.menu {
+           
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: gray;
+            display: grid;
+            place-content: center;
+            z-index: 2;
+            
+           
+        }
+
+         .header_menuBtn {
+        
+            background-color: none;
+            right: 30px;
+            
+            width : 150%;
+            height : 150%;
+          
+
+        }
+
+        .noscroll,
+.noscroll body {
+  overflow: hidden;
+  
+}
+
+</style>
+
+
+
+<body>
+<header>
+
+
+
+<button
+  @click="menuIsOpen = ! menuIsOpen" class="boutonme">
+ <img aria-controls="mainNav" class="header_menuBtn" src="/public/Icon/menu (1).svg" alt="btn menu">  
+</button>
+
+<h1 ><a href="./index.html">L'expo magique </a></h1>
+
+
+<nav 
+id="mainNav"
+ x-show="menuIsOpen"
+  x-transition.duration.800ms
+  class="menu"
+  >
+
+
+
+  <button @click="menuIsOpen = ! menuIsOpen">
+    <img class="croix" src="/public/icon/x (3).svg" alt="#">
+</button>
+
+    <ul class="ul">
+        <ul class="ul">
+            <li class="list-menu"><a href="./exposition.html"> Exposition</a></li>
+            <div class="bar1"></div>
+            <br><br>
+            <li class="list-menu"><a href="./réalisme.html">  Magical realism</a></li>
+            <div class="bar1"></div>
+            <br><br>
+            <li class="list-menu"><a href="./contact.html"> Abous us </a></li>
+            <div class="bar1"></div>
+            <br><br>
+            <li class="list-menu"><a href="./index.html"> French</a></li>
+            
+    </ul>
+    
+</nav>
+
+
+
+</header>
+</head>
+<div class="bar"></div>
+
+<br>
+
+<p class="Expo">Expositon in Paris </p>
+<p class="Réalismemagique"> Magical realism </p>
+<p class="Expo"> from April 13 to june 23,  2023</p>
+
+<br>
+
+
+<p class="soustitretest">Magical realism </p>
+<div class="carre">
+<p class="texte"> Magical realism is a term used by literary criticism and art criticism since 1925 to describe productions where elements perceived and decreed as "magical", "supernatural" and "irrational".
+</p>
+<img class="imgcarre1" src="./public/img/page d'acceuil/cadre.webp" alt="cadre">
+</div>
+
+<br>
+<div class="carre"> 
+  
+   
+
+<h3 class="titre-carrousel">  Artists to discover</h3>
+        <div class="carrousel-a">      
+            <div class="carrousel" x-data="{hrefCourant:'#ecran-1',}">
+                <button @click="const p =$refs.parent ;  p.scrollLeft-= p.clientWidth" class="carrousel_btn carrousel_btn-avant" aria-label="slide précedent"><</button><button @click="const p =$refs.parent ;  p.scrollLeft+= p.clientWidth" class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant">></button>
+              
+              <div class="carrousel_parent-ecrans" x-ref="parent" @scroll.debounce.250ms.passive="hrefCourant = '#'+
+                                [...$refs.parent.children]
+                                .find(e=>e.getBoundingClientRect().x>=0)
+                                .id">
+                    <div id="ecran-1" class="carrousel_ecran">
+                        <figure>
+                            <a href="./Stefancaltia.html">
+                            <img src="public/img/page d'acceuil/Fridha.webp" alt="image ecran 1">
+                        </a>
+                        </figure>
+                    </div>
+                    <div id="ecran-2" class="carrousel_ecran">
+                        <figure>
+                            <a href="./antoniolopez.html">
+                            <img src="public/img/page d'acceuil/barbu2.webp" alt="image ecran 2">
+                        </a>
+                        </figure>
+                    
+                    </div>
+                    <div id="ecran-3" class="carrousel_ecran">
+                        <figure>
+                            <a href="./ivanmarcuch.html">
+                            <img src="public/img/page d'acceuil/num3.webp" alt="image ecran 3">
+                        </a>
+                        </figure>
+                    </div>
+                    <div id="ecran-4" class="carrousel_ecran">
+                        <figure>
+                            <a href="./Frida kahlo.html">
+                            <img src="public/img/page d'acceuil/dernierprk.webp" alt="image ecran 4">
+                        </a>
+                        </figure>
+                   
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+          <br>
+          <br>
+          <br>
+          <br>          
+<footer> 
+
+    <div class="barre"></div>
+    <h4 class="p__footer">&copy; Wali Youssef - C2</h4>
+
+    <Ul<ul style="list-style-type:none;"></ul>
+<li><a class="p__footer" href="./exposition.html">Exposition</a></li>
+<li><a class="p__footer" href="./index.html">Acceuil</a></li>
+<li><a class="p__footer "href="#"> <img src="./public/Icon/instagram.svg" alt="#"> </a></li>
+<li><a class="p__footer "  href="contact.html">Formulaire to Contact</a></li>
+<li><a class="p__mail "href="mailto:youyouwalicm@gmail.com">Contact Mail</a></li>
+</Ul>
+    <p class="p__footer">
+Projet réalisé dans le cadre d'un exercice pédagogique au département
+      <a class="p__footer " href="http://mmimontbeliard.com">MMI de Montbéliard</a >
+      </p>
+
+      <IMG
+      class="icon__mmi"
+       src= "/public/icon/LOGO_MMI.svg"
+       alt="logo du dpt MMI de Montbéliard">
+
+     <p>Université Nord Franche-Comté</p>
+ </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

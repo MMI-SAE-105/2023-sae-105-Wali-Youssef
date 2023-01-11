@@ -1,0 +1,13 @@
+.btn_accordeon {
+    position: relative;
+    text-decoration: none;
+    padding: 1em 2.5em;
+    display: inline-block;
+    border-radius: 1em;
+    border: none;
+    font-family: "jaldi";
+    color: var(--couleur-tonique-1);
+    background-color: var(--couleur-tonique-2);
+    margin-left: 15%;
+    margin-top: 5%;
+}

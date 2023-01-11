@@ -97,16 +97,6 @@ id="mainNav"
 
 <br>
 <br><br>
-<p class="soustitretarif"> Information </p>
-<br>
-
-<p class="expo">Dates de l’exposition : du 13 avril au 23 juin 2021</p>
-<p class="expo">  Lieu de l’exposition : Fondation Cartier, 261 Bd Raspail, 75014 Paris</p>
-<p class="expo">   Horaires d’ouverture : Tous les jours de 11h à 20h, sauf le lundi. Nocturne le mardi, jusqu'à 22h. La fermeture des salles débute à 19h45 (21h45 les mardis).</p>
-
-<br>
-    <p class="soustitretarif"> Tarif </p>
-<br>
 
 
 
@@ -114,24 +104,30 @@ id="mainNav"
 
 <div x-data="{buttonIsOpen: 0}">
     <section>
-      <button @click="buttonIsOpen = (buttonIsOpen === 1)?0:1" class="btn_accordeon">Tarif</button>
-      <p class="text_page" x-show="buttonIsOpen === 1"x-transition.duration.700ms>Les places ne sont pas disponible pour l'instant <a href="./exposition.html"> ici </a></p>
-    </section>
+      <button @click="buttonIsOpen = (buttonIsOpen === 1)?0:1" class="soustitretarif">Information</button>
+        <p class="expo" x-show="buttonIsOpen === 1"x-transition.duration.700ms>dates de l’exposition : du 13 avril au 23 juin 2021</p>
+        <p class="expo" x-show="buttonIsOpen === 1"x-transition.duration.700ms>   Lieu de l’exposition : Fondation Cartier, 261 Bd Raspail, 75014 Paris</p>
+        <p class="expo" x-show="buttonIsOpen === 1"x-transition.duration.700ms>  Horaires d’ouverture : Tous les jours de 11h à 20h, sauf le lundi. Nocturne le mardi, jusqu'à 22h. La fermeture des salles débute à 19h45 (21h45 les mardis).</p>
+     
 </div>
 
 
+<br>
 
 
 
 
-
-
-    <p class="expo">Plein tarif ⇒ 11€</p>
-    <p class="expo">  Tarif réduit ⇒ 7,50€</p>
-    <p class="expo">  Réduction 13 - 25 ans ⇒ 5€</p>
-    <p class="expo">   Fondation Cartier Pass ⇒ 18€ - 50€</p>
-    <p class="expo">  Moins de 13 ans, Laissez-passer annuel, carte Icom, carte de presse, carte d'invalidité, Fondation Cartier </p>
-    <p class="expo">  Pass, Etudiants ⇒ Gratuit</p>
+<div x-data="{buttonIsOpen: 0}">
+    <section>
+      <button @click="buttonIsOpen = (buttonIsOpen === 1)?0:1" class="soustitretarif">Tarif</button>
+        <p class="expo" x-show="buttonIsOpen === 1"x-transition.duration.700ms>Plein tarif ⇒ 11€</p>
+        <p class="expo" x-show="buttonIsOpen === 1"x-transition.duration.700ms>  Tarif réduit ⇒ 7,50€</p>
+        <p class="expo" x-show="buttonIsOpen === 1"x-transition.duration.700ms>  Réduction 13 - 25 ans ⇒ 5€</p>
+        <p class="expo" x-show="buttonIsOpen === 1"x-transition.duration.700ms>   Fondation Cartier Pass ⇒ 18€ - 50€</p>
+        <p class="expo" x-show="buttonIsOpen === 1"x-transition.duration.700ms> Moins de 13 ans, Laissez-passer annuel, carte Icom, carte de presse, carte d'invalidité, Fondation Cartier </p>
+        <p class="expo" x-show="buttonIsOpen === 1"x-transition.duration.700ms>  Pass, Etudiants ⇒ Gratuit</p>
+    </section>
+</div>
     
 <br>
 

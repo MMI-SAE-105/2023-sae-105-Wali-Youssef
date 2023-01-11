@@ -107,6 +107,25 @@ id="mainNav"
 <br>
     <p class="soustitretarif"> Tarif </p>
 <br>
+
+
+
+
+
+<div x-data="{buttonIsOpen: 0}">
+    <section>
+      <button @click="buttonIsOpen = (buttonIsOpen === 1)?0:1" class="btn_accordeon">Tarif</button>
+      <p class="text_page" x-show="buttonIsOpen === 1"x-transition.duration.700ms>Les places ne sont pas disponible pour l'instant <a href="./exposition.html"> ici </a></p>
+    </section>
+</div>
+
+
+
+
+
+
+
+
     <p class="expo">Plein tarif ⇒ 11€</p>
     <p class="expo">  Tarif réduit ⇒ 7,50€</p>
     <p class="expo">  Réduction 13 - 25 ans ⇒ 5€</p>
